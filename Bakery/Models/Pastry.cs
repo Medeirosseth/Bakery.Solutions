@@ -18,8 +18,8 @@ public class Pastry
       }
       else
       {
-        int hello = 55;
-        return hello;
+        int TEST = 55;
+        return TEST;
       }
     }
   }
