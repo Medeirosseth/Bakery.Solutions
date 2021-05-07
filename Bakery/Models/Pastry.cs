@@ -21,11 +21,12 @@ public class Pastry
         int PastryCostTotal = ((PastriesPurchased / 3) * 5);
         return PastryCostTotal;
       }
-      else
+      else  
       {
-        int TEST = 1234;
-        return TEST;
+        int PastryCostTotal = ((((PastriesPurchased - (PastriesPurchased % 3)) / 3) * 5) + ((PastriesPurchased % 3) * 2));
+        return PastryCostTotal;
       }
+   
       
     }
   }

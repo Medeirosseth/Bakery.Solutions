@@ -51,5 +51,18 @@ public class BakeryPastryTests
         //Assert
         Assert.AreEqual(10, PastryCostTotal);
       }
+
+      [TestMethod]
+
+      public void CostOfPastry_ReturnCostOfPastryThatIncludesAddTheRemainderAfterThreeModulo()
+      {
+        //Arrange
+        int pastriesPurchased = 10;
+        Pastry newPastry = new Pastry(pastriesPurchased);
+        //Act
+        int PastryCostTotal = newPastry.CostOfPastry();
+        //Assert
+        Assert.AreEqual(17, PastryCostTotal);
+      }
   }
 }
