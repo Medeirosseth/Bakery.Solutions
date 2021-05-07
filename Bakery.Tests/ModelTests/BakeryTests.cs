@@ -59,7 +59,18 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
 
-  }
+      [TestMethod]
+    public void PastriesPurchased_CreatsAnInstanceOfPastry_int()
+    {
+      //Arrange
+      int pastriesPurchased = 1;
+      Pastry newPastry = new Pastry(pastriesPurchased);
+      //Act
+      int pastriesPurchasedResult = newPastry.PastriesPurchased;
+      //Assert
+      Assert.AreEqual(pastriesPurchasedResult, pastriesPurchased);
+    
+    }  }
 
 
 }
