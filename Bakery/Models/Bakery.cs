@@ -15,12 +15,7 @@ namespace Bakery.Models
     }
         public int CostOfBread()
     {
-     if (BreadPurchased % 3 ==0 ) 
-     {
-       int BreadCostTotal = (BreadPurchased * 3);
-       return BreadCostTotal;
-     }
-     else if(BreadPurchased == 1)
+     if (BreadPurchased < 3 ) 
      {
        int BreadCostTotal = (BreadPurchased * 5);
        return BreadCostTotal;

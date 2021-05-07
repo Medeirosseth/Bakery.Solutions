@@ -29,24 +29,10 @@ namespace Bakery.Tests
 
        [TestMethod]
 
-    public void CostOfBread_ReturnsTheTotalCostOfOneBread_int()
+    public void CostOfBread_ReturnsTheTotalCostOfOneAndTwoLoafs_int()
     {
       //Arrange
-      int breadPurchased = 1;
-      Bread newBread = new Bread(breadPurchased);
-      //Act
-      int BreadCostTotal = newBread.CostOfBread();
-      //Assert
-      Assert.AreEqual(5, BreadCostTotal );
-
-    }
-
-        [TestMethod]
-
-    public void CostOfBread_ReturnsTheTotalCostOfthreeBreadLoafs_int()
-    {
-      //Arrange
-      int breadPurchased = 3;
+      int breadPurchased = 2;
       Bread newBread = new Bread(breadPurchased);
       //Act
       int BreadCostTotal = newBread.CostOfBread();
@@ -54,6 +40,20 @@ namespace Bakery.Tests
       Assert.AreEqual(10, BreadCostTotal );
 
     }
+
+    //     [TestMethod]
+
+    // public void CostOfBread_ReturnsTheTotalCostOfthreeBreadLoafs_int()
+    // {
+    //   //Arrange
+    //   int breadPurchased = 3;
+    //   Bread newBread = new Bread(breadPurchased);
+    //   //Act
+    //   int BreadCostTotal = newBread.CostOfBread();
+    //   //Assert
+    //   Assert.AreEqual(10, BreadCostTotal );
+
+    // }
 
   }
 }
