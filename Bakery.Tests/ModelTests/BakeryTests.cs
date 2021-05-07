@@ -18,12 +18,12 @@ namespace Bakery.Tests
     public void BreadPurched_GetsQuanityOfBreadPurchased_int()
     {
       //Arrange
-      int BreadPurchased = 1;
-      Bread newBread = new Bread();
+      int breadPurchased = 1;
+      Bread newBread = new Bread(breadPurchased);
       //Act
-      int Bread = newBread.BreadPurchased;
+      int breadPurchasedResult = newBread.BreadPurchased;
       //Assert
-      Assert.AreEqual( Bread , newBread.BreadPurchased);
+      Assert.AreEqual( breadPurchased, breadPurchasedResult );
 
     }
 

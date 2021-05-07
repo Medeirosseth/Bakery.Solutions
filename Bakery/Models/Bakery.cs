@@ -7,6 +7,10 @@ namespace Bakery.Models
   {
     
   
+    public int BreadPurchased { get; set; }
+
+
+
 
   
   }
