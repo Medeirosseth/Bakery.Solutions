@@ -21,12 +21,15 @@ BREAD TESTS
 ~~~~~~ 3 * 10 = 30
 ~~~~~~ left overs get charged 1 * $5 = $5
 ~~~~~~ $30 + $5 = $35  
+----- [Test] cost of 4-->10 loafs of bread should equal 35 ///////maybe a modulo\\\
 
------ [Test] cost of 4 loafs of bread should equal 15 ///////maybe a modulo\\\
-PASTRY TESTS --- put bread and pastry in different files?
+
+PASTRY TESTS --- 
 ---- Test cost of 1 Pastry should equal 2
 ---- Test cost of 2 pastires should equal 4
----- test cost of 3 pastires should equal 5
+~~~~~ pastryPurchased <3 * 2
+---- test cost of 3 pastries should equal 5
+~~~~  pastry(3) % 3 == 0 --  pastry(3) / 3 = 1 * 5 = 5
 
 ---Return cost of order
 

@@ -56,8 +56,10 @@ namespace Bakery.Tests
     {
     
       Pastry newPastry = new Pastry();
-      Assert.AreEqual(typeof(Pastry), newPastry.GetType() );
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+
   }
+
 
 }

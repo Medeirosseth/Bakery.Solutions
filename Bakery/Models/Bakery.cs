@@ -34,7 +34,9 @@ namespace Bakery.Models
 
   public class Pastry
   {
-    
+    public int PastriesPurchased { get; set; }
+   
+ 
   }
 
   
