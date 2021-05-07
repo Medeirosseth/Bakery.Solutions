@@ -69,8 +69,21 @@ namespace Bakery.Tests
       int pastriesPurchasedResult = newPastry.PastriesPurchased;
       //Assert
       Assert.AreEqual(pastriesPurchasedResult, pastriesPurchased);
-    
-    }  }
+    }  
+
+      [TestMethod]
+
+      public void CostOfPastry_ReturnCostOfOneAndTwoPastriesPurchased_Int()
+      {
+        //Arrange
+        int pastriesPurchased = 2;
+        Pastry newPastry = new Pastry(pastriesPurchased);
+        //Act
+        int PastryCostTotal = newPastry.CostOfPastry();
+        //Assert
+        Assert.AreEqual(PastryCostTotal, pastriesPurchased);
+      } 
+  }
 
 
 }
