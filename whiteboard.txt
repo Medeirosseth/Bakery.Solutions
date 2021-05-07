@@ -6,9 +6,13 @@ When the User Runs the application, they should recieve a prompt with a welcome 
 ------ Console.WriteLine("Our special today is [BREAD]: Buy 2, get 1 free. A single loaf costs 5$
 [PASTRY]: Buy 1 for \$@ or 3 for $5)
 BREAD TESTS
------ Test cost of 1 loaf of bread should equal 5 
------ Test cost of 3 loafs of bread  should equal 10
------ Test cost of 4 loafs of bread should equal 15 ///////maybe a modulo\\\
+----- [Test] cost of 1 loaf of bread should equal 5  
+~~~~~ cost of one bread == 5
+~~~~~ cost of two bread == 10
+~~~~~ if breadquantity < 3 * 5
+----- [Test] cost of 3 loafs of bread  should equal 10
+~~~~~~ if breadquantity is equally divisible (%) by 3 
+----- [Test] cost of 4 loafs of bread should equal 15 ///////maybe a modulo\\\
 PASTRY TESTS --- put bread and pastry in different files?
 ---- Test cost of 1 Pastry should equal 2
 ---- Test cost of 2 pastires should equal 4
