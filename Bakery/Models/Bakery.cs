@@ -8,9 +8,11 @@ namespace Bakery.Models
     
   
     public int BreadPurchased { get; set; }
+    public Bread(int breadPurchased)
+    {
+      BreadPurchased = breadPurchased;
 
-
-
+    }
 
   
   }
