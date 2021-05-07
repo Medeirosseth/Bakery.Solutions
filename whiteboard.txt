@@ -1,0 +1,21 @@
+There should be Two Classes: One for Bread and One for Pastry
+----- Test class for Bread
+----- Test class for Pastry
+When the User Runs the application, they should recieve a prompt with a welcome message along with the cost for both bread and pastries
+------ Console.WriteLine("Welcome are you interested in purchasing fresh baked goods press y to continue")
+------ Console.WriteLine("Our special today is [BREAD]: Buy 2, get 1 free. A single loaf costs 5$
+[PASTRY]: Buy 1 for \$@ or 3 for $5)
+BREAD TESTS
+----- Test cost of 1 loaf of bread should equal 5 
+----- Test cost of 3 loafs of bread  should equal 10
+----- Test cost of 4 loafs of bread should equal 15 ///////maybe a modulo\\\
+PASTRY TESTS --- put bread and pastry in different files?
+---- Test cost of 1 Pastry should equal 2
+---- Test cost of 2 pastires should equal 4
+---- test cost of 3 pastires should equal 5
+
+---Return cost of order
+
+-two classes and uses of namespaces BREAD/PASTRY
+-autoimplements properties GET SET
+-- //arrange\\ //act\\ //Assert\\
