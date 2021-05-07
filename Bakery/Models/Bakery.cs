@@ -20,10 +20,17 @@ namespace Bakery.Models
        int BreadCostTotal = (BreadPurchased * 5);
        return BreadCostTotal;
      }
+     else if (BreadPurchased % 3 != 0  )
+     {
+       int BreadCostTotal = ((((BreadPurchased - (BreadPurchased % 3)) / 3) * 10 ) + ((BreadPurchased % 3) * 5));
+       return BreadCostTotal;
+     }
      else
      {
        return BreadPurchased;
      }
     }
   }
+
+  
 }

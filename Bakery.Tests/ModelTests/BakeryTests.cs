@@ -14,7 +14,6 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-
     public void BreadPurched_GetsQuanityOfBreadPurchased_int()
     {
       //Arrange
@@ -24,11 +23,8 @@ namespace Bakery.Tests
       int breadPurchasedResult = newBread.BreadPurchased;
       //Assert
       Assert.AreEqual( breadPurchased, breadPurchasedResult );
-
     }
-
        [TestMethod]
-
     public void CostOfBread_ReturnsTheTotalCostOfOneAndTwoLoafs_int()
     {
       //Arrange
@@ -38,11 +34,9 @@ namespace Bakery.Tests
       int BreadCostTotal = newBread.CostOfBread();
       //Assert
       Assert.AreEqual(10, BreadCostTotal );
-
     }
 
         [TestMethod]
-
     public void CostOfBread_ReturnsTheTotalCostOfthreeBreadLoafs_int()
     {
       //Arrange
@@ -52,8 +46,18 @@ namespace Bakery.Tests
       int BreadCostTotal = newBread.CostOfBread();
       //Assert
       Assert.AreEqual(35, BreadCostTotal );
-
     }
-
   }
+
+  public class BakeryPastryTests
+  {
+      [TestMethod]
+    public void BakeryPastry_CreatsAnInstanceOfPastry_int()
+    {
+    
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType() );
+    }
+  }
+
 }
