@@ -13,7 +13,6 @@ namespace Bakery.Models
       BreadPurchased = breadPurchased;
 
     }
-
   
   }
 }
