@@ -41,5 +41,19 @@ namespace Bakery.Tests
 
     }
 
+        [TestMethod]
+
+    public void CostOfBread_ReturnsTheTotalCostOfthreeBreadLoafs_int()
+    {
+      //Arrange
+      int breadPurchased = 3;
+      Bread newBread = new Bread(breadPurchased);
+      //Act
+      int BreadCostTotal = newBread.CostOfBread();
+      //Assert
+      Assert.AreEqual(10, BreadCostTotal );
+
+    }
+
   }
 }
