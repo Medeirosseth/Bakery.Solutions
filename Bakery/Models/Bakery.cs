@@ -1,12 +1,8 @@
 using System;
 namespace Bakery.Models
-
 {
-
-  public class Bread
+    public class Bread
   {
-    
-  
     public int BreadPurchased { get; set; }
     public Bread(int breadPurchased)
     {
@@ -31,16 +27,5 @@ namespace Bakery.Models
      }
     }
   }
-
-  public class Pastry
-  {
-    public int PastriesPurchased { get; set; }
-   
-    public Pastry(int pastriesPurchased)
-    {
-      PastriesPurchased = pastriesPurchased;
-    }
-  }
-
   
 }
