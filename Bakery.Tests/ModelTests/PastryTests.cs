@@ -31,12 +31,12 @@ public class BakeryPastryTests
       public void CostOfPastry_ReturnCostOfOneAndTwoPastriesPurchased_Int()
       {
         //Arrange
-        int pastriesPurchased = 123;
+        int pastriesPurchased = 2;
         Pastry newPastry = new Pastry(pastriesPurchased);
         //Act
         int PastryCostTotal = newPastry.CostOfPastry();
         //Assert
-        Assert.AreEqual(5, PastryCostTotal);
+        Assert.AreEqual(4, PastryCostTotal);
       } 
   }
 }
