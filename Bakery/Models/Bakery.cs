@@ -13,6 +13,19 @@ namespace Bakery.Models
       BreadPurchased = breadPurchased;
 
     }
+        public int CostOfBread()
+    {
+     if (BreadPurchased == 1)
+     {
+       int BreadCostTotal = (BreadPurchased * 5);
+       return BreadCostTotal;
+     }
+     else
+     {
+       return BreadPurchased;
+     }
+     
+    }
   
   }
 }
