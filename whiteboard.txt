@@ -12,6 +12,12 @@ BREAD TESTS
 ~~~~~ if breadquantity < 3 * 5
 ----- [Test] cost of 3 loafs of bread  should equal 10
 ~~~~~~ if breadquantity is equally divisible (%) by 3 
+~~~~~~ if 8 breads were purchased modulo 3  = 2
+~~~~~~ now 6 breads modulo 3 = 0
+~~~~~~ then you times remainder 2 by cost = 5
+~~~~~~ 8 % 3 = 2 
+~~~~~~ leaving 6 if modulo of 3 == 0 * 5
+
 ----- [Test] cost of 4 loafs of bread should equal 15 ///////maybe a modulo\\\
 PASTRY TESTS --- put bread and pastry in different files?
 ---- Test cost of 1 Pastry should equal 2
