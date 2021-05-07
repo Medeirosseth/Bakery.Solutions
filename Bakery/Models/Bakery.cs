@@ -36,7 +36,10 @@ namespace Bakery.Models
   {
     public int PastriesPurchased { get; set; }
    
- 
+    public Pastry(int pastriesPurchased)
+    {
+      PastriesPurchased = pastriesPurchased;
+    }
   }
 
   
