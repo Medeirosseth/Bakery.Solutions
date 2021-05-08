@@ -1,5 +1,4 @@
-using System;
-namespace Bakery.Models
+namespace PierresBakery.Models
 {
     public class Bread
   {
