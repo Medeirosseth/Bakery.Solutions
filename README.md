@@ -34,7 +34,7 @@ _A C# console application that provides users with a menu containg two options (
    - Finally, run the command `dotnet run` to run the project!
    - Note: `dotnet run` also restores and builds the project, so you can use this single command to start the console app
 5. To run tests:
-   - Navigate to `MyProject.Solution/MyProject.Tests` in your command line.
+   - Navigate to `Bakery.Solutions/Bakery.Tests` in your command line.
    - Run the command `dotnet restore` to restore the dependencies that are listed in the .csproj
    - Finally, run the command `dotnet test` to run the tests!
 
