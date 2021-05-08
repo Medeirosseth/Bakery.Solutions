@@ -14,7 +14,7 @@
 _A C# console application that provides users with a menu containg two options (baguettes/pastries). User then make their decision and enter their quantity and then are returned a cost pertaining to the deals of the day _
 
 <details>
-   <summary>Setup and Use</summary>:open_file_folder:
+   <summary>Setup and Use:open_file_folder:</summary>
 
 ### Prerequisites
 
@@ -47,7 +47,7 @@ _A C# console application that provides users with a menu containg two options (
 ## License
 
 <details>
-  <summary>MIT</summary>:school:
+  <summary>MIT:school:</summary>
 Copyright <2021> <Seth Medeiros>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
