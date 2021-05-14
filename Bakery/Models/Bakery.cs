@@ -31,5 +31,4 @@ namespace PierresBakery.Models
      }
     }
   }
-  
 }

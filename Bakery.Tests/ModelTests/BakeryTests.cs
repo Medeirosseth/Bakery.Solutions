@@ -1,8 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Bakery.Models;
+using PierresBakery.Models;
 
-namespace Bakery.Tests
+namespace PierresBakery.Tests
 {
   [TestClass]
   public class BakeryBreadTests
@@ -32,7 +32,7 @@ namespace Bakery.Tests
       int breadPurchased = 2;
       Bread newBread = new Bread(breadPurchased);
       //Act
-      int BreadCostTotal = newBread.CostOfBread();
+      int BreadCostTotal = newBread.CostOfBread(breadPurchased);
       //Assert
       Assert.AreEqual(10, BreadCostTotal );
     }
@@ -44,7 +44,7 @@ namespace Bakery.Tests
       int breadPurchased = 10;
       Bread newBread = new Bread(breadPurchased);
       //Act
-      int BreadCostTotal = newBread.CostOfBread();
+      int BreadCostTotal = newBread.CostOfBread(breadPurchased);
       //Assert
       Assert.AreEqual(35, BreadCostTotal );
     }

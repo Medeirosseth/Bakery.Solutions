@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BakeryPastry.Models;
+using PierresBakery.Models;
 
 namespace BakeryPastry.Tests
 {
@@ -34,7 +34,7 @@ public class BakeryPastryTests
         int pastriesPurchased = 2;
         Pastry newPastry = new Pastry(pastriesPurchased);
         //Act
-        int PastryCostTotal = newPastry.CostOfPastry();
+        int PastryCostTotal = newPastry.CostOfPastry(pastriesPurchased);
         //Assert
         Assert.AreEqual(4, PastryCostTotal);
       } 
@@ -47,7 +47,7 @@ public class BakeryPastryTests
         int pastriesPurchased = 6;
         Pastry newPastry = new Pastry(pastriesPurchased);
         //Act
-        int PastryCostTotal = newPastry.CostOfPastry();
+        int PastryCostTotal = newPastry.CostOfPastry(pastriesPurchased);
         //Assert
         Assert.AreEqual(10, PastryCostTotal);
       }
@@ -60,7 +60,7 @@ public class BakeryPastryTests
         int pastriesPurchased = 10;
         Pastry newPastry = new Pastry(pastriesPurchased);
         //Act
-        int PastryCostTotal = newPastry.CostOfPastry();
+        int PastryCostTotal = newPastry.CostOfPastry(pastriesPurchased);
         //Assert
         Assert.AreEqual(17, PastryCostTotal);
       }
