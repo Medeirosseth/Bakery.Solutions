@@ -54,7 +54,22 @@ namespace PierresBakery
         Bread usersBreadPurchase = new Bread(breadPurchased);
         int breadTotal = usersBreadPurchase.CostOfBread(breadPurchased);
         Console.WriteLine("Your total comes out to $" + breadTotal + " ☜(ﾟヮﾟ☜)");
-        
+        Console.WriteLine("Enter [\"M\"] to return to the main Menu... Au revoir");
+        string userAnswer3 = Console.ReadLine();
+        if(userAnswer3 == "M" || userAnswer3 == "m")
+        {
+          Main();
+        }
+        else
+        {
+          Console.WriteLine("\n");
+          Console.WriteLine("\n");
+          Console.WriteLine(" -         Merci, reviens nous voir         -");
+          Console.WriteLine(" -                                          -");
+          Console.WriteLine(" -            (╯°□°)╯︵ ┻━┻                 -");
+          Console.WriteLine("\n");
+          Console.WriteLine("\n");
+        }
       }
       else if(userAnswer == "P" || userAnswer == "p")
       {
@@ -76,7 +91,22 @@ namespace PierresBakery
         Pastry userPastryPurchase = new Pastry(pastriesPurchased);
         int pastryTotal = userPastryPurchase.CostOfPastry(pastriesPurchased);
         Console.WriteLine("Your total comes out to $" + pastryTotal + " ☜(ﾟヮﾟ☜) ");
-
+        Console.WriteLine("Enter [\"M\"] to return to the main Menu... Au revoir");
+        string userAnswer3 = Console.ReadLine();
+        if(userAnswer3 == "M" || userAnswer3 == "m")
+        {
+          Main();
+        }
+        else
+        {
+          Console.WriteLine("\n");
+          Console.WriteLine("\n");
+          Console.WriteLine(" -         Merci, reviens nous voir         -");
+          Console.WriteLine(" -                                          -");
+          Console.WriteLine(" -            (╯°□°)╯︵ ┻━┻                 -");
+          Console.WriteLine("\n");
+          Console.WriteLine("\n");
+        }
 
       }
       else
