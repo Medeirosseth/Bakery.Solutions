@@ -9,7 +9,7 @@ public class Pastry
       PastriesPurchased = pastriesPurchased;
     }
 
-    public int CostOfPastry()
+    public int CostOfPastry(int pastriesPurchased)
     {
       if(PastriesPurchased < 3)
       {

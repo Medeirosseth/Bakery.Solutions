@@ -54,6 +54,7 @@ namespace PierresBakery
         Bread usersBreadPurchase = new Bread(breadPurchased);
         int breadTotal = usersBreadPurchase.CostOfBread(breadPurchased);
         Console.WriteLine("Your total comes out to $" + breadTotal + " ☜(ﾟヮﾟ☜)");
+        
       }
       else if(userAnswer == "P" || userAnswer == "p")
       {
@@ -70,6 +71,11 @@ namespace PierresBakery
         ForegroundColor = ConsoleColor.DarkBlue;
         Console.WriteLine(" -  Enter quantitiy below then press enter  -");
         Console.WriteLine("\n");
+        string pastryPurchasedQuanity = Console.ReadLine();
+        int pastriesPurchased = int.Parse(pastryPurchasedQuanity);
+        Pastry userPastryPurchase = new Pastry(pastriesPurchased);
+        int pastryTotal = userPastryPurchase.CostOfPastry(pastriesPurchased);
+        Console.WriteLine("Your total comes out to $" + pastryTotal + " ☜(ﾟヮﾟ☜) ");
 
 
       }
