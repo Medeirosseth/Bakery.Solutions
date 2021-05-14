@@ -1,7 +1,6 @@
 using System;
 using static System.Console;
 using PierresBakery.Models;
-using BakeryPastry.Models;
 
 
 
@@ -49,9 +48,12 @@ namespace PierresBakery
         Console.WriteLine(" -                                          -");
         ForegroundColor = ConsoleColor.DarkBlue;
         Console.WriteLine(" Enter quantity below then press enter");
-         Console.WriteLine("\n");
-        string userQuantity = Console.ReadLine();
-        //CostOfBread();
+        Console.WriteLine("\n");
+        string breadPurchasedQuantity = Console.ReadLine();
+        int breadPurchased = int.Parse(breadPurchasedQuantity);
+        Bread usersBreadPurchase = new Bread(breadPurchased);
+        int breadTotal = usersBreadPurchase.CostOfBread(breadPurchased);
+        Console.WriteLine("Your total comes out to $" + breadTotal + " ☜(ﾟヮﾟ☜)");
       }
       else if(userAnswer == "P" || userAnswer == "p")
       {
@@ -68,7 +70,8 @@ namespace PierresBakery
         ForegroundColor = ConsoleColor.DarkBlue;
         Console.WriteLine(" -  Enter quantitiy below then press enter  -");
         Console.WriteLine("\n");
-       // CostOfPastry()
+
+
       }
       else
       {
